@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuestionario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+</head>
+<body>
+  </div>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+
+      <h1 class="text-center mb-4">Cuestionario</h1>
+
+      <!-- Instrucciones -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Instrucciones</h5>
+          <p class="card-text">
+            Este es un cuestionario de N preguntas de opción múltiple.
+            Puedes navegar entre las preguntas sin perder tu respuesta seleccionada.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contador -->
+      <p class="text-end fw-bold">
+        Pregunta <span id="contador">1</span> de <span id="total">10</span>
+      </p>
+
+      <!-- Pregunta -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 id="pregunta">
+            ¿Cuál es la raíz cuadrada de 25?
+          </h5>
+        </div>
+      </div>
+
+      <!-- Opciones -->
+      <form id="opciones" class="mb-4">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="respuesta" id="opcion1">
+          <label class="form-check-label" for="opcion1">
+            5
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="respuesta" id="opcion2">
+          <label class="form-check-label" for="opcion2">
+            3
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="respuesta" id="opcion3">
+          <label class="form-check-label" for="opcion3">
+            25 no tiene raíz cuadrada
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="respuesta" id="opcion4">
+          <label class="form-check-label" for="opcion4">
+            2
+          </label>
+        </div>
+      </form>
+
+      <!-- Botones -->
+      <div class="d-flex justify-content-between">
+        <button id="btnAnterior" class="btn btn-secondary">
+          ← Anterior
+        </button>
+
+        <button id="btnSiguiente" class="btn btn-primary">
+          Siguiente →
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
